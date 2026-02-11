@@ -1,6 +1,5 @@
-"""
-IoT Rule Engine Package
-FastAPI-based microservice for energy monitoring rule evaluation.
-"""
+"""Database package for MySQL/SQLite operations."""
 
-__version__ = "1.0.0"
+from app.db.mysql import DatabaseManager, get_db_manager
+
+__all__ = ["DatabaseManager", "get_db_manager"]
